@@ -31,7 +31,13 @@ function FakeStore() {
     }
   };
 
-  if (loading) return <div className="text-center mt-10 text-xl">Loading...</div>;
+  if (loading) return <div className="text-center mt-10 text-xl">
+    <svg
+      src="https://cdn.jsdelivr.net/npm/react-spinners@0.11.0/clip-loader.svg"
+    >
+    </svg>
+    <p>Loading...</p>
+  </div>;
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-6">
